@@ -27,9 +27,9 @@ if (window.Kaizoumark) {
     var parentElt = scriptTag.parentNode;
     var container = document.createElement('div');
     container.style['position'] = 'relative';
-    container.style['width'] = '600px';
-    container.style['height'] = '500px';
-    container.style['border'] = '2px solid grey';
+    container.style['width'] = '1920px';
+    container.style['height'] = '1080px';
+    container.style['border'] = 'none';
     parentElt.appendChild(container);
     var output = document.createElement('div');
     parentElt.appendChild(output);
