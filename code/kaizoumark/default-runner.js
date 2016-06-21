@@ -39,7 +39,7 @@ if (window.Kaizoumark) {
         function (evt) {
             var result = evt.label + ":" + evt.level + "[" + evt.status + "]";
             results.push(result)
-            var lastScore = s.match(/^Got\s(\d+)fps/)[1] * 1;
+            var lastScore = evt.status.match(/^Got\s(\d+)fps/)[1] * 1;
             rawResults.push({label: evt.label, level: evt.level, status: evt.status, score: evt.level * 20 + lastScore })
         },
         false);
